@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+   
+    grid-template-areas: '. gmail images menu sign-in';
+    margin-top: 20px;
+}
+
+#gmail {
+    grid-area: gmail;
+    align-self: center;
+    justify-self: center;
+}
+
+#images {
+    grid-area: images;
+    align-self: center;
+    justify-self: center;
+}
+
+#menu {
+    grid-area: menu;
+    align-self: center;
+    justify-self: center;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    align-self: center;
+    justify-self: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 100px;
+    grid-template-areas: 
+    '. logo .'
+    '. form .'
+    '. text .';
+}
+
+#logo {
+    grid-area: logo;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+
+#text {
+    grid-area: text;
+    align-self: baseline;
+    justify-self: center;
+
+}
+
+#form {
+    grid-area: form;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+#searchfield {
+    display: block;
+    font-size: small;
+    width: 540px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid rgba(235, 228, 228, 0.89);
+
+}
+
+#flexbox {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#gsearch-btn {
+    border: none;
+    width: 135px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #5F6368;
+    
+}
+
+#random-btn {
+    border: none;
+    width: 135px;
+    height: 40px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #5F6368;
+}
+    
+
+footer {
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 150px 800px 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+    'country . . . . . . .'
+    'advertising business about how . privacy terms settings';
+}
+
+#country {
+    grid-area: country;
+}
+
+#advertising {
+    grid-area: advertising;
+}
+
+#business {
+    grid-area: business;
+}
+
+#about {
+    grid-area: about;
+}
+
+#how {
+    grid-area: how;
+}
+
+#privacy {
+    grid-area: privacy;
+}
+
+#terms {
+    grid-area: terms;
+}
+
+#settings {
+    grid-area: settings;
+}
